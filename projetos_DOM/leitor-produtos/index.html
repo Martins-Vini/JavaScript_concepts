@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado on-line</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de preços de produtos</h1>
+    </header>
+    <main>
+        <aside>
+            <p>Insira preços até de 8 produtos: <input type="number" name="txt" id="ins"> <button id="btn" onclick="addlist()">Adicionar</button></p>
+        </aside>
+        <aside id="inserir">
+            <h2>Lista</h2>
+            <select name="txtlist" id="list" size="8"></select>
+            <button id="btn2" onclick="seeResult()">Analisar</button>
+        </aside>
+        <aside id="resp">
+            
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;Direitos autorais reservados</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

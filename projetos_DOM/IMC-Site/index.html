@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador do IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de IMC - Índice de Massa Corpórea</h1>
+    </header>
+    <main>
+        <div>
+            <h1>O que é IMC?</h1>
+            <p>IMC é a sigla para <strong>Índice de Massa Corporal</strong>. É um cálculo simples que utiliza a altura e o peso de uma pessoa para estimar a quantidade de gordura corporal e classificar o peso como normal, abaixo do peso, sobrepeso ou obesidade.</p>
+
+            <h1>Por que calcular o IMC?</h1>
+            <ul>
+                <li><strong>Avaliar o peso:</strong> O IMC é uma ferramenta útil para identificar se o peso de uma pessoa está dentro de uma faixa saudável.</li>
+                <li><strong>Identificar riscos:</strong> Pessoas com IMC alto estão mais propensas a desenvolver doenças como diabetes, hipertensão e doenças do coração.
+                </li>
+                <li><strong>Acompanhar o progresso:</strong> O IMC pode ser utilizado para acompanhar a evolução do peso ao longo do tempo, especialmente durante dietas ou programas de exercícios físicos.</li>
+            </ul>
+
+            <h1>Como calcular o IMC?</h1>
+            <p>Fórmula utilizada para o cálculo do IMC:</p>
+            <p><strong>Peso/Altura²</strong></p>
+
+            <p>Os resultados do IMC são classificados da seguinte forma:</p>
+            <ol>
+                <li><strong>Abaixo do peso:</strong> IMC menor que 18,5</li>
+                <li><strong>Peso ideal:</strong> IMC entre 18,5 e 25</li>
+                <li><strong>Acima do peso</strong> IMC entre 25 e 30</li>
+                <li><strong>Obeso:</strong> IMC acima de 30</li>
+            </ol>
+
+            <h1>Avisos</h1>
+            <ul>
+                <li><strong>O IMC não é uma medida perfeita:</strong> Ele não leva em consideração a composição corporal (massa muscular, gordura, ossos), que varia de pessoa para pessoa.</li>
+                <li><strong>Outros fatores:</strong> Além do IMC, outros fatores como idade, sexo, etnia e distribuição da gordura corporal também influenciam a saúde.</li>
+                <li><strong>Consulta médica:</strong> O IMC deve ser utilizado como uma ferramenta auxiliar e não como um diagnóstico definitivo. É fundamental consultar um médico para uma avaliação completa da saúde.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Os campos abaixos são obrigatórios para o cálculo do IMC*</h2>
+            <label for="altura">Digite a altura sua altura em metros:</label>
+            <input type="number" name="txtaltura" id="altura">
+
+            <label for="peso">Digite seu peso em quilos:</label>
+            <input type="number" name="txtpeso" id="peso">
+
+            <button onclick="confirmar()">Confirmar</button>
+        </div>
+        <div id="campo-resposta">
+            <p id="res"></p>
+            <picture id="container-img">
+            </picture>
+            <p id="res2"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Direitos autorais reservados - 2025</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

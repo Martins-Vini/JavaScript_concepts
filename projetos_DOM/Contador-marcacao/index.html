@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com marcação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contador com marcação de intervalo</h1>
+    </header>
+    <main>
+        <aside>
+            <div>
+                <label for="init">Digite valor do início da contagem:</label>
+                <input type="number" name="txtinit" id="init">
+            </div>
+            <div>
+                <label for="end">Digite valor do final da contagem:</label>
+                <input type="number" name="txtend" id="end">
+            </div>
+            <div>
+                <label for="jump">Digite valor de salto da contagem:</label>
+                <input type="number" name="txtjump" id="jump">
+            </div>
+            <div>
+                <label for="marc">Digite intervalo numérico deseja fazer uma marcação:</label>
+                <input type="number" name="txtmarc" id="marc">
+            </div>
+            <div>
+                <button id="cont">Gerar contagem</button>
+            </div>
+        </aside>
+        <aside>
+            <div id="res">
+
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;Direitos autorais reservados</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

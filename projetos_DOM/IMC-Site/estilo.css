@@ -1,0 +1,70 @@
+:root{
+    --cor1:#D9042B;
+    --cor2:#D91A4D;
+    --cor3:#BF0404;
+
+
+}
+
+body{
+    background: linear-gradient(90deg, var(--cor3), var(--cor1), var(--cor2));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+header{
+    background:linear-gradient(90deg, #610909, #7e0404, #580202);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+    width:100%;
+    color:white;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width:1000px;
+    padding:15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.377);
+}
+
+ul, ol{
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border-radius: 10px;
+    border:1px solid black;
+    width:80px;
+}
+
+
+footer{
+    background-color: black;
+    color:white;
+    margin-top: 50px;
+    width:100%;
+    text-align: center;
+}
+

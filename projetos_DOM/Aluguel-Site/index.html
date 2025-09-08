@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de aluguel de carros</h1>
+        <h2>Os carros dos seus sonhos, só aqui!</h2>
+    </header>
+    <main>
+        <aside id="p1">
+            <h2>Cadastre as informações sobre o carro alugado</h2>
+            <ul>
+                <li><strong>Carro Popular</strong> = R$90,00/dia</li>
+                <li><strong>Carro de Luxo</strong> = R$150,00/dia</li>
+            </ul>
+            <h2>Que tipo de carro foi alugado?</h2>
+            <input checked type="radio" name="opcar" id="popular">
+            <label for="popular">Carro Popular</label>
+            <input type="radio" name="opcar" id="luxo">
+            <label for="luxo">Carro de Luxo</label>
+            
+            <h2>Quantos quilômetros foram percorridos pelo carro?</h2>
+            <label for="km">Quilômetros percorridos:</label>
+            <input type="number" name="txtkm" id="km">
+
+            <h2>Quantos dias você ficou com a posse do carro?</h2>
+            <label for="km">Dias com a posse do carro:</label>
+            <input type="number" name="txtdias" id="dias">
+
+            <button id="botao">Confirmar</button>
+        </aside>
+        <aside>
+            <p id="resp">
+
+            </p>
+            <picture id="resp2">
+
+            </picture>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;Direitos autorais reservados</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
