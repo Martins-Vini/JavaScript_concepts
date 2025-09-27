@@ -1,0 +1,11 @@
+*Como funciona o fluxo de um programa?
+
+-> Um programa em qualquer linguagem de programação segue um fluxo linear (de cima para baixo, da esquerda para a direita), executando um só caminho
+
+Através de estruturas condicionais (Que usam operadores lógicos e comparativos), é possível desviar esse fluxo linear em várias bifurcações. (Assim como na vida real).
+
+Estruturas condicionais a serem aprendidas:
+
+- If/Else (Simples, composto e encadeamento)
+- Operador ternário
+- Switch Case
