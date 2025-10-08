@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em JavaScript</title>
+</head>
+<body>
+    <h1>Funções e tipo de funções em JS</h1>
+    <p>Uma função serve para fazer jus ao paradigma funcional de programação, basicamente separando o programa em funções, em blocos em que cada parte faz alguma coisa</p>
+
+    <h3>Abra o arquivo JS e o console para ver mais anotações sobre o conteúdo</h3>
+
+    <h2>Sintaxe</h2>
+    <p><code>
+        function soma(a,b){<br>
+            return a+b;<br>
+        };<br>
+
+        soma(4,5)
+    </code><br>
+    <strong>O retorno deve ser 9</strong>
+    </p>
+
+    <h2>Valor x Referência</h2>
+    <p>Basicamente se você está programando, é necessário ter a ciência de que, uma variável passada como parâmetro numa função, só tem seu valor alterado dentro da função. Não tem como "vazar" o processamento daquela variável para fora.</p>
+    <p>No caso de um atributo JSON numa função, aí o caso é diferente, se um atributo de um objeto pessoa, por exemplo, "cep", for mudado dentro da função, será mudado fora da função. Podendo impactar diretamente no objetivo do programa.</p>
+
+    <h2>Escopo da função</h2>
+    <p>Uma função não funciona corretamente se ela for atribuída dentro de uma variável ou constante e for chamada acima da sua estrutura:</p>
+    <p><code>
+        sum(4,5)<br>
+
+       const sum = function (a,b){<br>
+            return a+b;<br>
+        };<br>
+    </code><br>
+    <strong>O retorno deve ser 9</strong>
+    </p>
+    <script src="funcoes.js"></script>
+    <script src="funcoes2.js"></script>
+</body>
+</html>
