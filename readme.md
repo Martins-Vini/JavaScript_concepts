@@ -8,4 +8,4 @@
 **Cursos feitos neste repositório:** 
 > CursoEmvideo, devSamurai, Exercism
 
-#### Desde já, muito obrigado a todos! Ass. Vinícius Martins
+#### Desde já, muito obrigado a todos! Assinado: Vinícius Martins
