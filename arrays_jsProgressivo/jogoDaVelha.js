@@ -54,7 +54,7 @@ async function jogoPessoa(matriz) {
             if (matriz[linha][coluna] == 0) {
                 posicaoCorreta = true;
                 matriz[linha][coluna] = marca;
-                validarVitoria(matriz)
+                validarVitoria(matriz, marca);
             } else {
                 console.log(`Posição ${matriz[linha][coluna]} da velha já preenchida ou vazia, tente de novo`);
             }
@@ -62,23 +62,109 @@ async function jogoPessoa(matriz) {
     }
 }
 
-async function jogoComputador() {
+async function jogoComputador(matriz) {
     console.clear()
-    console.log(`Em construção...`);
+    const q = {
+        "type": "string",
+        "name": "marca",
+        "message": "Insira qual marca você vai escolher [O] ou [X]",
+        validate: e => e === "O" || e === "X" ? true : "Insira marca de jogo da velha válida"
+    };
+
+    let jogadores = []
+    let CPUmarca;
+    let resp = await inquirer.prompt(q);
+
+    if (resp.marca === "O") {
+        CPUmarca = "X";
+    } else if(resp.marca === "X") {
+        CPUmarca = "O";
+    };
+
+    jogadores.push(CPUmarca);
+    jogadores.push(resp.marca);
+
+    //Esse loop controla o esquema de turnos
+    for (let turno = 0; turno < 9; turno++) {
+        let indiceJogador = turno % 2;
+        let marca = jogadores[indiceJogador];
+
+        console.log(`Turno ${turno + 1}`)
+        console.log(`-----Vez do jogador ${indiceJogador + 1} (${marca})`)
+        console.log(matriz)
+
+        if (indiceJogador % 2 == 0) {
+            let posicaoCorreta = false;
+            while (posicaoCorreta == false) {
+                console.log(`Computador pensando...`)
+                let linha = Math.floor(Math.random() *3);
+                let coluna = Math.floor(Math.random() *3);
+
+                if (matriz[linha][coluna] == 0) {
+                    posicaoCorreta = true;
+                    matriz[linha][coluna] = marca;
+                    validarVitoria(matriz, marca);
+                } else {
+                    console.log(`Posição ${matriz[linha][coluna]} da velha já preenchida ou vazia, tente de novo`);
+                }
+
+            }
+        } else {
+
+            let posicaoCorreta = false;
+            while (posicaoCorreta == false) {
+                let jogada = await inquirer.prompt(prompt_jogada);//invocando prompt de jogada
+                let linha = jogada.linha;
+                let coluna = jogada.coluna;
+                if (matriz[linha][coluna] == 0) {
+                    posicaoCorreta = true;
+                    matriz[linha][coluna] = marca;
+                    validarVitoria(matriz, marca);
+                } else {
+                    console.log(`Posição ${matriz[linha][coluna]} da velha já preenchida ou vazia, tente de novo`);
+                }
+
+            }
+        }
+
+    };
+
 }
 
 function cancelarJogo() {
     console.log(`Jogo cancelado, muito obrigado por participar!`);
 }
 
-function validarVitoria(matriz){
-    for(let i = 0; i < 3;i++){
-        for(let j = 0; j < 3;j++){
-            if(matriz[i][0]){
-
-            }
+function validarVitoria(matriz, marca) {
+    for (let i = 0; i < 3; i++) {
+        if (matriz[i].every(cell => cell === marca)) {
+            console.log(`Vitória do jogador ${marca}`)
+            process.exit(0)
+        } else if (matriz[0][i] === marca && matriz[1][i] === marca && matriz[2][i] === marca) {
+            console.log(`Vitória do jogador ${marca}`);
+            process.exit(0)
         }
     }
+
+    if (matriz[0][0] == marca && matriz[1][1] == marca && matriz[2][2] == marca) {
+
+        console.log(`Vitória do jogador ${marca}`)
+        process.exit(0);
+
+    } else if (matriz[0][2] == marca && matriz[1][1] == marca && matriz[2][0] == marca) {
+
+        console.log(`Vitória do jogador ${marca}`);
+        process.exit(0);
+
+    } else if (matriz.every(row => row.every(cell => cell !== 0))) {
+
+        console.log(`Empate, jogo finalizado`)
+        process.exit(0);
+
+    }
+
+
+
 }
 
 async function menu(matriz) {
