@@ -1,1 +1,0 @@
-console.log(`Mensagem do Js externo`)
