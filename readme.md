@@ -1,4 +1,4 @@
-## 🚀 JavaScript - Estudos e Revisão de Conceitos 💻
+##  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="Ícone JavaScript" width="40" height="40"/>  JavaScript - Estudos e Revisão de Conceitos
 
 > Repositório em **Atualização Constante** para aprimoramento contínuo!
 
@@ -25,15 +25,13 @@ Para a execução de algum código com **node.js** para ver seu comportamento, s
 ```bash
 > npm i
 
-2. Execução do Arquivo
+```
+#### 2. Execução do Arquivo
 
-Entre na pasta desejada e execute o código:
+*Entre na pasta desejada e execute o código:*
 
-Mude para o diretório:
-
- cd + <nome_da_pasta>
-
-Execute o arquivo:
+```bash
+cd + <nome_da_pasta>
 
 node + <nome_do_arquivo>.js
 
@@ -43,4 +41,4 @@ node + <nome_do_arquivo>.js
 
 **Desde já, muito obrigado a todos!**
 
-*Assinado: Vinícius Martins*
+*Por: Vinicius Martins*
