@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de tema dinâmico</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .default{
+            background-color: white;
+            color:black;
+            padding:20px;
+        }
+
+        .dark {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .light {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        .fancy {
+            background-color: #fce4ec;
+            color: #880e4f;
+            border: 3px dashed #e91e63;
+            padding: 20px;
+        }
+
+        div{
+            margin: auto;
+            width:150px;
+            height:120px;
+            color:whitesmoke;
+            margin-top: 30px;
+        }
+
+        p{
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Temas dinâmicos com CSS</h1>
+    <select name="opcoesTema" id="seletorTema">
+        <option value="0">default</option>
+        <option value="1">dark</option>
+        <option value="2">light</option>
+        <option value="3">fancy</option>
+    </select>
+    <div id="caixaConteudo" class="default">
+        <p>Conteúdo imaginário</p>
+    </div>
+    <script src="ex12.js"></script>
+</body>
+</html>
