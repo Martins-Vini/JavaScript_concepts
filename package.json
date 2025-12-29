@@ -1,0 +1,29 @@
+{
+  "name": "javascript_concepts",
+  "version": "1.0.0",
+  "description": "> Repositório em construção",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martins-Vini/JavaScript_concepts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Martins-Vini/JavaScript_concepts/issues"
+  },
+  "homepage": "https://github.com/Martins-Vini/JavaScript_concepts#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "inquirer": "^12.10.0",
+    "jest": "^30.2.0",
+    "mysql2": "^3.15.3",
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+    <style>
+        body{
+            font-family: 'Arial';
+            text-align: center;
+        }
+
+        button{
+            width:120px;
+            height:100px;
+            border-radius: 100%;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.182);
+        }
+
+        audio{
+            display:hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo da contagem - Contador de cliques</h1>
+    <button id="botaoContador">Clique aqui!</button>
+    <p id="contador">Cliques: 0</p>
+    <audio id="audio_soco" src="soco_audio.mp3" preload="auto"></audio>
+    <script src="ex3.js"></script>
+</body>
+</html>

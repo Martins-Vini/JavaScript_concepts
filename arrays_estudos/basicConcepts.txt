@@ -1,0 +1,6 @@
+método .push -> Adiciona elemento na última posição do array
+método .unshift -> Adiciona dados no primeiro elemento do array
+método .pop() -> Remove último elemento do array e retorna valor
+método .shift() -> Remove primeiro elemento do array e retorna valor
+
+método .sort() -> ordena valores em ordem crescente
