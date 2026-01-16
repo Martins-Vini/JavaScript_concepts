@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../public/styles/reset.css">
+    <link rel="stylesheet" href="../public/styles/style.css">
+</head>
+
+<body>
+    <h1>Produtos filtrados</h1>
+    <ul>
+        <!-- Produtos serão inseridos aqui dinamicamente -->
+    </ul>
+    <script type="module">
+        let listaProdutos = document.getElementsByTagName('ul')[0];
+
+        async function consumirAPI() {
+            try {
+                const url = await fetch('http://localhost:8084/produtos/');
+                const dados = await url.json();
+
+                console.log(dados);
+                return dados;
+            } catch (error) {
+                console.error('Erro ao consumir a API:', error);
+            }
+        }
+
+        async function exibirProdutos() {
+            let resp = await consumirAPI();
+
+            let lista = resp.produtos
+
+            if (Array.isArray(lista)) {
+               lista.forEach(e => {
+                    let listaItem = document.createElement('li');
+                    listaItem.innerHTML = `Nome: ${e.nome} | Preço: R$${e.preco} | Categoria: ${e.tipo}`;
+                    listaProdutos.appendChild(listaItem);
+                })
+            } else {
+                console.error("O dado recebido não é um array", lista)
+            }
+
+        }
+
+        exibirProdutos();
+    </script>
+
+</html>
+</body>

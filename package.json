@@ -2,8 +2,9 @@
   "name": "javascript_concepts",
   "version": "1.0.0",
   "description": "> Repositório em construção",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "dev": "nodemon ./estruturaDados/filtragemEcommerce/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Martins-Vini/JavaScript_concepts#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "express-session": "^1.18.2",
     "inquirer": "^12.10.0",
