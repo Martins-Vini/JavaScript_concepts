@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="Ícone JavaScript" width="40" height="40"/>
-
 ## 🚀 JavaScript - Estudos e Revisão de Conceitos 💻
 ##  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="Ícone JavaScript" width="40" height="40"/>  JavaScript - Estudos e Revisão de Conceitos
 

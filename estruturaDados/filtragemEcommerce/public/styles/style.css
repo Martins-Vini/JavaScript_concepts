@@ -1,10 +1,30 @@
 @charset "UTF-8";
 
-body{
+body {
     font-family: Arial;
     text-align: center;
 }
 
-ul{
-    margin:auto;
+body h1 {
+    font-size: 2em;
+    margin: 30px;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    text-align: justify;
+    padding: 30px;
+}
+
+ul li{
+    margin-bottom: 15px;
 }
