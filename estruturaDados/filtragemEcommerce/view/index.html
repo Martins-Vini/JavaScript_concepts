@@ -10,12 +10,27 @@
 </head>
 
 <body>
-    <h1>Produtos filtrados</h1>
+    <nav>
+        <input id="pesquisarProduto" type="search" placeholder="Buscar produto... ex: Travesseiro NASA">
+    </nav>
+    <h1>Magazene Luiza - Produtos</h1>
     <label for="menuFiltro">Filtrar por preço:</label>
     <select name="menuFiltro" id="menuFiltro">
         <option value="0">Todos os produtos</option>
         <option value="1">Produtos abaixo de R$30</option>
         <option value="2">Produtos acima de R$30</option>
+    </select>
+    <label for="menuAvaliacao">Filtrar por avaliação:</label>
+    <select name="menuAvaliacao" id="menuAvaliacao">
+        <option value="0">Todos os produtos</option>
+        <option value="1">Produtos com avaliação maior que 4.5</option>
+        <option value="2">Produtos com avaliação menor que 4.5</option>
+    </select>
+    <label for="menuEstoque">Filtrar por estoque:</label>
+    <select name="menuEstoque" id="menuEstoque">
+        <option value="0">Todos os produtos</option>
+        <option value="1">Produtos com estoque maior que 15</option>
+        <option value="2">Produtos com estoque menor que 15</option>
     </select>
     <main>
         <ul>

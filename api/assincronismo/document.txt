@@ -1,0 +1,3 @@
+A base da programação assíncrona é ser contrária da programação síncrona, como assim? Bem, uma programação síncrona é definida como um programa cru, que executa linha abaixo de linha, mesmo que isso significa ter que esperar mais tempo do que necessário para o programa terminar. E é aí justamente o problema da programação síncrona: a espera desnecessária de processamentos e operações enquanto outros processamentos já podiam ser realizados ao mesmo tempo. Então o assincronismo busca resolver isso.
+
+=> Um programa assíncrono busca realizar diversas operações ao mesmo tempo para evitar qualquer tipo de espera desnecessária ou confusão lógica.
